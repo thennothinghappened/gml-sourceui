@@ -24,8 +24,6 @@ function UIElement() constructor {
 			return;
 		}
 		
-		UILog($"entering render on {instanceof(self)}");
-		
 		var ret_target = surface_get_target();
 		
 		// when previous surface was the app surface,
@@ -49,12 +47,26 @@ function UIElement() constructor {
 		
 		self.has_update = false;
 		
-		UILog($"leaving render on {instanceof(self)}");
-		
 	}
 	
 	draw = function(w, h) {
 		throw "Not implemented";
+	}
+	
+	_focused = function(mouse_x, mouse_y) {
+		return self.focused(mouse_x, mouse_y);
+	}
+	
+	focused = function(mouse_x, mouse_y) {
+		return undefined;
+	}
+	
+	_click = function(mouse_x, mouse_y) {
+		return self.click(mouse_x, mouse_y);
+	}
+	
+	click = function(mouse_x, mouse_y) {
+		return;
 	}
 	
 	_cleanup = function() {

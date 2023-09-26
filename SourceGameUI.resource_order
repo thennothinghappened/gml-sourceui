@@ -5,10 +5,13 @@
     {"name":"Main","order":2,"path":"folders/SourceGameUI/Main.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"UIText","order":5,"path":"scripts/UIText/UIText.yy",},
     {"name":"ExampleUIContainer","order":1,"path":"objects/ExampleUIContainer/ExampleUIContainer.yy",},
-    {"name":"UIWindow","order":2,"path":"scripts/UIWindow/UIWindow.yy",},
+    {"name":"UISurface","order":2,"path":"scripts/UISurface/UISurface.yy",},
     {"name":"UILog","order":4,"path":"scripts/UILog/UILog.yy",},
+    {"name":"UIWindow","order":6,"path":"scripts/UIWindow/UIWindow.yy",},
     {"name":"UIElement","order":1,"path":"scripts/UIElement/UIElement.yy",},
+    {"name":"UIColumn","order":7,"path":"scripts/UIColumn/UIColumn.yy",},
     {"name":"UITreeElement","order":3,"path":"scripts/UITreeElement/UITreeElement.yy",},
   ],
 }
