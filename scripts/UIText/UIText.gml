@@ -8,7 +8,7 @@ function UIText(str) : UIElement() constructor {
 	
 	set_string = function(str) {
 		self.str = str;
-		self.has_update = true;
+		update();
 	}
 
 }

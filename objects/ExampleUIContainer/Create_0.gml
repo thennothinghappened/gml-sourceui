@@ -13,3 +13,5 @@ window = new UIWindow([
 		
 	])
 ]);
+
+focus = undefined;

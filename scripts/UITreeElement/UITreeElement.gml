@@ -8,18 +8,34 @@ function UITreeElement(children) : UIElement() constructor {
 		throw "Not implemented";
 	}
 	
-	_focused = function(mouse_x, mouse_y) {
+	_init = function(_on_update) {
+		self._on_update = _on_update;
+		
+		for (var i = 0; i < self.num_children; i ++) {
+			self.children[i]._init(self._on_child_update);
+		}
+	}
+	
+	_get_focused = function(mouse_x, mouse_y) {
 		var child = self._find_focused_child(mouse_x, mouse_y);
 		
 		if (child == undefined) {
-			return self.focused(mouse_x, mouse_y);	
+			return self.get_focused(mouse_x, mouse_y);	
 		}
 		
-		return child._focused(mouse_x, mouse_y);
+		return child._get_focused(mouse_x, mouse_y);
 	}
 	
 	_on_child_update = function() {
-		self.has_update = true;
+		update();
+	}
+	
+	_cleanup = function() {
+		surface_free(self.surface);
+		
+		for (var i = 0; i < self.num_children; i ++) {
+			self.children[i]._cleanup();
+		}
 	}
 	
 }

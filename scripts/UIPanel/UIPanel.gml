@@ -17,9 +17,9 @@ function UIPanel(x, y, w, h, children) : UISurface(children) constructor {
 		
 	}
 	
-	focused = function(mouse_x, mouse_y) {
+	get_focused = function(mouse_x, mouse_y) {
 		if (self.num_children > 0) {
-			return self.children[0]._focused(mouse_x, mouse_y);
+			return self.children[0]._get_focused(mouse_x, mouse_y);
 		}
 		
 		return undefined;
@@ -28,7 +28,7 @@ function UIPanel(x, y, w, h, children) : UISurface(children) constructor {
 	_move = function(x, y) {
 		self.x = x;
 		self.y = y;
-		self.has_update = true;
+		update();
 	}
 	
 }

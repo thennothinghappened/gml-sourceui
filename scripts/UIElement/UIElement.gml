@@ -5,19 +5,21 @@ function UIElement() constructor {
 	
 	self.mouse_last_x = 0;
 	self.mouse_last_y = 0;
-	self.draw_focused = false;
+	self._on_update = function() {};
 	
 	_surface_prep = function(w, h) {
 		if (!surface_exists(self.surface)) {
 			self.surface = surface_create(w, h);
+			
+			update();
 		}
 		
 		if (surface_get_width(self.surface) != w || surface_get_height(self.surface) != h) {
 			surface_free(self.surface);
 			self.surface = surface_create(w, h);
+			
+			update();
 		}
-		
-		self.has_update = true;
 	}
 	
 	_draw = function(w, h) {
@@ -50,35 +52,51 @@ function UIElement() constructor {
 		}
 		
 		self.has_update = false;
-		self.draw_focused = false;
 		
+	}
+	
+	_init = function(_on_update) {
+		self._on_update = _on_update;
 	}
 	
 	draw = function(w, h) {
 		throw "Not implemented";
 	}
 	
-	_focused = function(mouse_x, mouse_y) {
+	_get_focused = function(mouse_x, mouse_y) {
 		self.mouse_last_x = mouse_x;
 		self.mouse_last_y = mouse_y;
-		self.draw_focused = true;
-		return self.focused(mouse_x, mouse_y);
+		return self.get_focused(mouse_x, mouse_y);
 	}
 	
-	focused = function(mouse_x, mouse_y) {
+	get_focused = function(mouse_x, mouse_y) {
 		return undefined;
 	}
 	
-	_click = function() {
-		return self.click();
+	
+	focus_start = function() {
+		return;
 	}
 	
-	click = function() {
+	focus_end = function() {
+		return;
+	}
+	
+	click_start = function() {
+		return;
+	}
+	
+	click_end = function() {
 		return;
 	}
 	
 	_cleanup = function() {
 		surface_free(self.surface);
+	}
+	
+	update = function() {
+		self.has_update = true;
+		self._on_update();
 	}
 	
 }

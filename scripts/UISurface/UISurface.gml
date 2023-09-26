@@ -51,23 +51,23 @@ function UISurface(children) : UITreeElement(children) constructor {
 		return undefined;
 	}
 	
-	_focused = function(mouse_x, mouse_y) {
+	_get_focused = function(mouse_x, mouse_y) {
 		var found = _find_focused_child(mouse_x, mouse_y);
 		
 		if (found == undefined) {
-			return self.focused(mouse_x, mouse_y);
+			return self.get_focused(mouse_x, mouse_y);
 		}
 		
-		var res = found.child._focused(found.mouse_x, found.mouse_y);
+		var res = found.child._get_focused(found.mouse_x, found.mouse_y);
 		
 		if (res == undefined) {
-			return self.focused(mouse_x, mouse_y);
+			return self.get_focused(mouse_x, mouse_y);
 		}
 		
 		return res;
 	}
 	
-	focused = function(mouse_x, mouse_y) {
+	get_focused = function(mouse_x, mouse_y) {
 		return undefined;
 	}
 	

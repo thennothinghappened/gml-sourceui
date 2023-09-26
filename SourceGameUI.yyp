@@ -11,10 +11,11 @@
   },
   "defaultScriptType": 1,
   "Folders": [
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Example","folderPath":"folders/SourceGameUI/Example.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Notes","folderPath":"folders/SourceGameUI/Notes.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"SourceGameUI","folderPath":"folders/SourceGameUI.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Example","folderPath":"folders/SourceGameUI/Example.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Main","folderPath":"folders/SourceGameUI/Main.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Notes","folderPath":"folders/SourceGameUI/Notes.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Components","folderPath":"folders/SourceGameUI/Example/Components.yy",},
   ],
   "IncludedFiles": [],
   "isEcma": false,

@@ -16,5 +16,7 @@ function UIWindow(children) : UISurface(children) constructor {
 	_child_get_h = function(child) {
 		return child.h;
 	}
+	
+	_init(function() {});
 
 }

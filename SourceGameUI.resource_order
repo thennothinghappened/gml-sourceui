@@ -1,8 +1,9 @@
 {
   "FolderOrderSettings": [
-    {"name":"Notes","order":1,"path":"folders/SourceGameUI/Notes.yy",},
     {"name":"SourceGameUI","order":14,"path":"folders/SourceGameUI.yy",},
     {"name":"Main","order":2,"path":"folders/SourceGameUI/Main.yy",},
+    {"name":"Notes","order":1,"path":"folders/SourceGameUI/Notes.yy",},
+    {"name":"Components","order":2,"path":"folders/SourceGameUI/Example/Components.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"UIText","order":5,"path":"scripts/UIText/UIText.yy",},
