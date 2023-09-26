@@ -40,11 +40,31 @@ function UISurface(children) : UITreeElement(children) constructor {
 				rel_mouse_x <= _child_get_w(child) &&
 				rel_mouse_y <= _child_get_h(child)
 			) {
-				return child;
+				return {
+					child: child,
+					mouse_x: rel_mouse_x,
+					mouse_y: rel_mouse_y
+				};
 			}
 		}
 		
 		return undefined;
+	}
+	
+	_focused = function(mouse_x, mouse_y) {
+		var found = _find_focused_child(mouse_x, mouse_y);
+		
+		if (found == undefined) {
+			return self.focused(mouse_x, mouse_y);
+		}
+		
+		var res = found.child._focused(found.mouse_x, found.mouse_y);
+		
+		if (res == undefined) {
+			return self.focused(mouse_x, mouse_y);
+		}
+		
+		return res;
 	}
 	
 	focused = function(mouse_x, mouse_y) {

@@ -18,4 +18,8 @@ function UITreeElement(children) : UIElement() constructor {
 		return child._focused(mouse_x, mouse_y);
 	}
 	
+	_on_child_update = function() {
+		self.has_update = true;
+	}
+	
 }

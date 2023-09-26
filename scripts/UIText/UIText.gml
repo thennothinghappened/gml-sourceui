@@ -10,7 +10,5 @@ function UIText(str) : UIElement() constructor {
 		self.str = str;
 		self.has_update = true;
 	}
-	
-	focused = function(mouse_x, mouse_y) { return self; }
 
 }

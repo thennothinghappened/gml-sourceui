@@ -26,6 +26,7 @@
     {"id":{"name":"UIText","path":"scripts/UIText/UIText.yy",},},
     {"id":{"name":"ExampleUIContainer","path":"objects/ExampleUIContainer/ExampleUIContainer.yy",},},
     {"id":{"name":"UISurface","path":"scripts/UISurface/UISurface.yy",},},
+    {"id":{"name":"UIButton","path":"scripts/UIButton/UIButton.yy",},},
     {"id":{"name":"UILog","path":"scripts/UILog/UILog.yy",},},
     {"id":{"name":"UIWindow","path":"scripts/UIWindow/UIWindow.yy",},},
     {"id":{"name":"UIElement","path":"scripts/UIElement/UIElement.yy",},},

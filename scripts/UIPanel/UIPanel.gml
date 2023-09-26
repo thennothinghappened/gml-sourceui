@@ -7,7 +7,7 @@ function UIPanel(x, y, w, h, children) : UISurface(children) constructor {
 	
 	self.surface_draw = method(self, draw);
 	
-	function draw(w, h) {
+	draw = function(w, h) {
 		self.w = w;
 		self.h = h;
 		
@@ -19,7 +19,7 @@ function UIPanel(x, y, w, h, children) : UISurface(children) constructor {
 	
 	focused = function(mouse_x, mouse_y) {
 		if (self.num_children > 0) {
-			return self.children[0];
+			return self.children[0]._focused(mouse_x, mouse_y);
 		}
 		
 		return undefined;

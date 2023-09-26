@@ -8,6 +8,7 @@
     {"name":"UIText","order":5,"path":"scripts/UIText/UIText.yy",},
     {"name":"ExampleUIContainer","order":1,"path":"objects/ExampleUIContainer/ExampleUIContainer.yy",},
     {"name":"UISurface","order":2,"path":"scripts/UISurface/UISurface.yy",},
+    {"name":"UIButton","order":8,"path":"scripts/UIButton/UIButton.yy",},
     {"name":"UILog","order":4,"path":"scripts/UILog/UILog.yy",},
     {"name":"UIWindow","order":6,"path":"scripts/UIWindow/UIWindow.yy",},
     {"name":"UIElement","order":1,"path":"scripts/UIElement/UIElement.yy",},

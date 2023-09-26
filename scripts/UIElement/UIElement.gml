@@ -3,6 +3,10 @@ function UIElement() constructor {
 	self.surface = surface_create(1, 1);
 	self.has_update = true;
 	
+	self.mouse_last_x = 0;
+	self.mouse_last_y = 0;
+	self.draw_focused = false;
+	
 	_surface_prep = function(w, h) {
 		if (!surface_exists(self.surface)) {
 			self.surface = surface_create(w, h);
@@ -46,6 +50,7 @@ function UIElement() constructor {
 		}
 		
 		self.has_update = false;
+		self.draw_focused = false;
 		
 	}
 	
@@ -54,6 +59,9 @@ function UIElement() constructor {
 	}
 	
 	_focused = function(mouse_x, mouse_y) {
+		self.mouse_last_x = mouse_x;
+		self.mouse_last_y = mouse_y;
+		self.draw_focused = true;
 		return self.focused(mouse_x, mouse_y);
 	}
 	
@@ -61,11 +69,11 @@ function UIElement() constructor {
 		return undefined;
 	}
 	
-	_click = function(mouse_x, mouse_y) {
-		return self.click(mouse_x, mouse_y);
+	_click = function() {
+		return self.click();
 	}
 	
-	click = function(mouse_x, mouse_y) {
+	click = function() {
 		return;
 	}
 	
