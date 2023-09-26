@@ -1,7 +1,14 @@
 {
   "FolderOrderSettings": [
-    {"name":"Example","order":10,"path":"folders/Example.yy",},
-    {"name":"Notes","order":13,"path":"folders/Notes.yy",},
+    {"name":"Notes","order":1,"path":"folders/SourceGameUI/Notes.yy",},
+    {"name":"SourceGameUI","order":14,"path":"folders/SourceGameUI.yy",},
+    {"name":"Main","order":2,"path":"folders/SourceGameUI/Main.yy",},
   ],
-  "ResourceOrderSettings": [],
+  "ResourceOrderSettings": [
+    {"name":"ExampleUIContainer","order":1,"path":"objects/ExampleUIContainer/ExampleUIContainer.yy",},
+    {"name":"UIWindow","order":2,"path":"scripts/UIWindow/UIWindow.yy",},
+    {"name":"UILog","order":4,"path":"scripts/UILog/UILog.yy",},
+    {"name":"UIElement","order":1,"path":"scripts/UIElement/UIElement.yy",},
+    {"name":"UITreeElement","order":3,"path":"scripts/UITreeElement/UITreeElement.yy",},
+  ],
 }
