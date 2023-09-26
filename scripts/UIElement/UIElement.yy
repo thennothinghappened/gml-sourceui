@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Main",
-    "path": "folders/SourceGameUI/Main.yy",
+    "name": "Components",
+    "path": "folders/SourceGameUI/Main/Components.yy",
   },
 }

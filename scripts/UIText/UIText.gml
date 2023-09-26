@@ -1,3 +1,4 @@
+/// @param {String} str Initial text
 function UIText(str) : UIElement() constructor {
 
 	self.str = str;

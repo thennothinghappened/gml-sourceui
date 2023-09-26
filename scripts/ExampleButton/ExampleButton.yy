@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "UIColumn",
+  "name": "ExampleButton",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
     "name": "Components",
-    "path": "folders/SourceGameUI/Main/Components.yy",
+    "path": "folders/SourceGameUI/Example/Components.yy",
   },
 }

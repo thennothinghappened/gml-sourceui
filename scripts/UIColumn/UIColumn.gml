@@ -1,3 +1,4 @@
+/// @param {Array<Struct.UIElement>} children
 function UIColumn(children) : UISurface(children) constructor {
 	
 	draw = function(w, h) {

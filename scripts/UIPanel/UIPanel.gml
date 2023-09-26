@@ -1,3 +1,8 @@
+/// @param {Real} x Initial x
+/// @param {Real} y Initial y
+/// @param {Real} w Initial width
+/// @param {Real} h Initial height
+/// @param {Array<Struct.UIElement>} children
 function UIPanel(x, y, w, h, children) : UISurface(children) constructor {
 	
 	self.x = x;

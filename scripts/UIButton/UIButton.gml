@@ -1,3 +1,4 @@
+/// @param {Array<Struct.UIElement>} children
 function UIButton(children) : UISurface(children) constructor {
 	
 	self.surface_draw = method(self, draw);
@@ -23,18 +24,6 @@ function UIButton(children) : UISurface(children) constructor {
 	focus_end = function() {
 		self.focused = false;
 		update();
-	}
-	
-	click_end = function() {
-		
-		if (self.num_children > 0) {
-			var first_child = self.children[0];
-			
-			if (instanceof(first_child) == "UIText") {
-				first_child.set_string(first_child.str + "!");
-			}
-		}
-		
 	}
 	
 }
