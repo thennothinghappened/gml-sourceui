@@ -7,6 +7,13 @@ function UIText(str) : UIElement() constructor {
 		draw_text(0, 0, self.str);	
 	}
 	
+	measure = function() {
+		return new UIBoxSize(
+			string_width(self.str),
+			string_height(self.str)
+		);
+	}
+	
 	set_string = function(str) {
 		self.str = str;
 		update();

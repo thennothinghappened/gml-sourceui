@@ -4,15 +4,16 @@ function UITreeElement(children) : UIElement() constructor {
 	self.children = children;
 	self.num_children = array_length(self.children);
 	
+	/// @param {Real} mouse_x
+	/// @param {Real} mouse_y
+	/// @returns {Struct|undefined}
 	_find_focused_child = function(mouse_x, mouse_y) {
 		throw "Not implemented";
 	}
 	
-	_init = function(_on_update) {
-		self._on_update = _on_update;
-		
+	init = function() {
 		for (var i = 0; i < self.num_children; i ++) {
-			self.children[i]._init(self._on_child_update);
+			self.children[i]._init(self._on_child_update, self);
 		}
 	}
 	

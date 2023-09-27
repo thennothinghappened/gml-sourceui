@@ -1,7 +1,7 @@
 /// @param {Array<Struct.UIElement>} children
 function UISurface(children) : UITreeElement(children) constructor {
 	
-	draw = function() {
+	draw = function(w, h) {
 		for (var i = 0; i < self.num_children; i ++) {
 			var child = self.children[i];
 			
@@ -11,20 +11,56 @@ function UISurface(children) : UITreeElement(children) constructor {
 		}
 	}
 	
-	_child_get_x = function(child) {
-		return 0;	
+	measure = function() {
+		var max_width = 0;
+		var max_height = 0;
+		
+		for (var i = 0; i < self.num_children; i ++) {
+			var child = self.children[i];
+			
+			var _width = _child_get_w(child);
+			var _height = _child_get_h(child);
+			
+			if (_width > max_width) {
+				max_width = _width;
+			}
+			
+			if (_height > max_height) {
+				max_height = _height;
+			}
+		}
+		
+		return new UIBoxSize(max_width, max_height);
 	}
 	
+	/// @param {Struct.UIElement} child
+	_child_get_x = function(child) {
+		return 0;
+	}
+	
+	/// @param {Struct.UIElement} child
 	_child_get_y = function(child) {
 		return 0;
 	}
 	
+	/// @param {Struct.UIElement} child
 	_child_get_w = function(child) {
-		return surface_get_width(self.surface);
+		var size = child.measured_size;
+		if (size == undefined || size.width == undefined) {
+			return 0;
+		}
+		
+		return size.width.size;
 	}
 	
+	/// @param {Struct.UIElement} child
 	_child_get_h = function(child) {
-		return surface_get_height(self.surface);	
+		var size = child.measured_size;
+		if (size == undefined || size.height == undefined) {
+			return 0;
+		}
+		
+		return size.height.size;
 	}
 	
 	_find_focused_child = function(mouse_x, mouse_y) {
@@ -55,13 +91,13 @@ function UISurface(children) : UITreeElement(children) constructor {
 		var found = _find_focused_child(mouse_x, mouse_y);
 		
 		if (found == undefined) {
-			return self.get_focused(mouse_x, mouse_y);
+			return get_focused(mouse_x, mouse_y);
 		}
 		
 		var res = found.child._get_focused(found.mouse_x, found.mouse_y);
 		
 		if (res == undefined) {
-			return self.get_focused(mouse_x, mouse_y);
+			return get_focused(mouse_x, mouse_y);
 		}
 		
 		return res;
