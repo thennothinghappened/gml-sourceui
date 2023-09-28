@@ -25,8 +25,10 @@
     "IDEVersion": "2023.8.1.102",
   },
   "resources": [
-    {"id":{"name":"Constraints","path":"scripts/Constraints/Constraints.yy",},"order":0,},
+    {"id":{"name":"UIConstraints","path":"scripts/UIConstraints/UIConstraints.yy",},"order":0,},
     {"id":{"name":"ExampleUIContainer","path":"objects/ExampleUIContainer/ExampleUIContainer.yy",},},
+    {"id":{"name":"UITodo","path":"scripts/UITodo/UITodo.yy",},"order":0,},
+    {"id":{"name":"UISize","path":"scripts/UISize/UISize.yy",},"order":0,},
     {"id":{"name":"ExampleRoom","path":"rooms/ExampleRoom/ExampleRoom.yy",},},
     {"id":{"name":"UIAssert","path":"scripts/UIAssert/UIAssert.yy",},"order":0,},
   ],

@@ -23,10 +23,22 @@ function UIConstraints(
     
     self.is_zero = (self.max_width == 0 || self.max_height == 0);
     
-    /// Takes another set of constraints, and returns the result of cooercing them
-    /// into these constraints.
-    constrain = function(other_constraints/*: UIConstraints*/) /*-> UIConstraints*/ {
-        
+    /// Applies this set of constraints to the given [other_constraints]
+    /// to cooerce a set that meets both.
+    /// @returns {UIConstraints}
+    constrain = function(other_constraints/*: UIConstraints*/) {
+        UITodo;
     }
     
+    /// Returns whether a given size satisfies these constraints.
+    /// @returns {bool}
+    is_satisfied_by = function(size/*: UISize*/) {
+        return (
+            size.width >= self.min_width &&
+            size.width <= self.max_width &&
+            size.height >= self.min_height &&
+            size.height <= self.max_height
+        );
+    }
 }
+

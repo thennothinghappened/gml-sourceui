@@ -10,8 +10,10 @@
     {"name":"UIRenderer","path":"scripts/UIRenderer/UIRenderer.yy","order":0,},
     {"name":"UIComponent","path":"scripts/UIComponent/UIComponent.yy","order":1,},
     {"name":"ExampleUIContainer","order":1,"path":"objects/ExampleUIContainer/ExampleUIContainer.yy",},
-    {"name":"Constraints","path":"scripts/Constraints/Constraints.yy","order":0,},
+    {"name":"UIConstraints","path":"scripts/UIConstraints/UIConstraints.yy","order":0,},
     {"name":"UIAssert","path":"scripts/UIAssert/UIAssert.yy","order":1,},
+    {"name":"UITodo","path":"scripts/UITodo/UITodo.yy","order":2,},
     {"name":"Inspiration.md","path":"notes/Inspiration.md/Inspiration.md.yy","order":0,},
+    {"name":"UISize","path":"scripts/UISize/UISize.yy","order":1,},
   ],
 }
