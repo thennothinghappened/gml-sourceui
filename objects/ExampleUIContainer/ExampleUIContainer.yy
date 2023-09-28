@@ -12,7 +12,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Example",
-    "path": "folders/SourceGameUI/Example.yy",
+    "path": "folders/SrcUI/Example.yy",
   },
   "parentObjectId": null,
   "persistent": false,
