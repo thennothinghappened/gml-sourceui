@@ -14,8 +14,9 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"SrcUI","folderPath":"folders/SrcUI.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Example","folderPath":"folders/SrcUI/Example.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Components","folderPath":"folders/SrcUI/Example/Components.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Main","folderPath":"folders/SrcUI/Main.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"src","folderPath":"folders/SrcUI/src.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Notes","folderPath":"folders/SrcUI/Notes.yy",},
+    {"resourceVersion":"1.0","name":"measuring","tags":[],"resourceType":"GMFolder","folderPath":"folders/SrcUI/src/measuring.yy","order":0,},
   ],
   "IncludedFiles": [],
   "isEcma": false,
@@ -24,8 +25,10 @@
     "IDEVersion": "2023.8.1.102",
   },
   "resources": [
+    {"id":{"name":"Constraints","path":"scripts/Constraints/Constraints.yy",},"order":0,},
     {"id":{"name":"ExampleUIContainer","path":"objects/ExampleUIContainer/ExampleUIContainer.yy",},},
     {"id":{"name":"ExampleRoom","path":"rooms/ExampleRoom/ExampleRoom.yy",},},
+    {"id":{"name":"UIAssert","path":"scripts/UIAssert/UIAssert.yy",},"order":0,},
   ],
   "RoomOrderNodes": [
     {"roomId":{"name":"ExampleRoom","path":"rooms/ExampleRoom/ExampleRoom.yy",},},
