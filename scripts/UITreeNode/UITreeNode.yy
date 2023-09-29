@@ -1,10 +1,10 @@
 {
   "parent": {
-    "name": "util",
-    "path": "folders/SrcUI/src/util.yy",
+    "name": "nodes",
+    "path": "folders/SrcUI/src/nodes.yy",
   },
   "resourceVersion": "1.0",
-  "name": "UIAssert",
+  "name": "UITreeNode",
   "tags": [],
   "resourceType": "GMScript",
   "isCompatibility": false,

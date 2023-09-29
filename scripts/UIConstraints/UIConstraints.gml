@@ -31,8 +31,7 @@ function UIConstraints(
     }
     
     /// Returns whether a given size satisfies these constraints.
-    /// @returns {bool}
-    is_satisfied_by = function(size/*: UISize*/) {
+    is_satisfied_by = function(size/*: UISize*/) /*-> bool*/ {
         return (
             size.width >= self.min_width &&
             size.width <= self.max_width &&

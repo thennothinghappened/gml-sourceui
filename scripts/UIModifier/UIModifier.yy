@@ -1,10 +1,10 @@
 {
   "parent": {
-    "name": "util",
-    "path": "folders/SrcUI/src/util.yy",
+    "name": "src",
+    "path": "folders/SrcUI/src.yy",
   },
   "resourceVersion": "1.0",
-  "name": "UIAssert",
+  "name": "UIModifier",
   "tags": [],
   "resourceType": "GMScript",
   "isCompatibility": false,

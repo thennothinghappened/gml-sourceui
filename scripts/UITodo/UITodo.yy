@@ -1,7 +1,7 @@
 {
   "parent": {
-    "name": "src",
-    "path": "folders/SrcUI/src.yy",
+    "name": "util",
+    "path": "folders/SrcUI/src/util.yy",
   },
   "resourceVersion": "1.0",
   "name": "UITodo",

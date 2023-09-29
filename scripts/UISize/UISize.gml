@@ -1,4 +1,4 @@
-/// Represents a given size.
+/// Represents a given size in pixels on screen.
 function UISize(
     width/*: real*/,
     height/*: real*/
